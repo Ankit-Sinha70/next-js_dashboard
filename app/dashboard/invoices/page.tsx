@@ -5,7 +5,7 @@ import Pagination from '@/app/ui/invoices/pagination';
 import Search from '@/app/ui/search';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
-import Table from "../../ui/invoices/Table"
+import InvoicesTable from '@/app/ui/invoices/Table';
  
 export default async function Page({
   searchParams,
@@ -29,7 +29,7 @@ return (
     <CreateInvoice />
   </div>
   <Suspense key={query + currentPage} fallback={<InvoicesTableSkeleton />}>
-    <Table query={query} currentPage={currentPage} />
+    <InvoicesTable query={query} currentPage={currentPage} />
   </Suspense>
   <div className="mt-5 flex w-full justify-center">
     <Pagination totalPages={totalPages} />

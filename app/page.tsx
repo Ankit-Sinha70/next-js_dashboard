@@ -20,7 +20,6 @@ export default function Page() {
             <strong>Welcome to Acme.</strong><br/>
             <img src="https://seeklogo.com/images/A/acme-logo-48333AD62C-seeklogo.com.png" alt="Acme Logo" style={{width:"70%"}}/>
             
-
             
           </p>
           <Link

@@ -1,9 +1,10 @@
-import React from 'react'
+import CustomersTable from "@/app/ui/customers/table"
 
 const page = () => {
+ 
   return (
     <div>
-        This is a customer route
+          <CustomersTable customers={[]}/>
     </div>
   )
 }
